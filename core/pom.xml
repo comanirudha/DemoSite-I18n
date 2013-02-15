@@ -43,7 +43,7 @@
             <artifactId>broadleaf-profile</artifactId>
         </dependency>
             <dependency>
-            <groupId>com.broadleafcommerce</groupId>
+            <groupId>org.broadleafcommerce</groupId>
             <artifactId>broadleaf-i18n</artifactId>
         </dependency>
     </dependencies>

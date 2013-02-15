@@ -10,10 +10,10 @@
     <name>ecommerce</name>
     <url>http://www.blc-archetype.com</url>
     <properties>
-        <blc.version>2.2.0-SNAPSHOT</blc.version>
-        <blc.i18n.version>1.0.0-SNAPSHOT</blc.i18n.version>
+        <blc.version>2.3.0-SNAPSHOT</blc.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gwt.version>2.4.0</gwt.version>
+        <blc.i18n.version>1.0.0-SNAPSHOT</blc.i18n.version>
     </properties>
     <description>My Company's eCommerce Website</description>
     <repositories>
@@ -232,18 +232,18 @@
             </dependency>
             <dependency>
                 <groupId>org.broadleafcommerce</groupId>
+                <artifactId>broadleaf-i18n</artifactId>
+                <version>${blc.i18n.version}</version>
+                <type>jar</type>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.broadleafcommerce</groupId>
                 <artifactId>integration</artifactId>
                 <version>${blc.version}</version>
                 <type>jar</type>
                 <classifier>tests</classifier>
                 <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.broadleafcommerce</groupId>
-                <artifactId>broadleaf-i18n</artifactId>
-                <version>${blc.i18n.version}</version>
-                <type>jar</type>
-                <scope>compile</scope>
             </dependency>
 
             <!-- Other dependencies -->
@@ -340,6 +340,6 @@
         <module>admin</module>
         <module>core</module>
         <module>site</module>
-        <module>combined</module>
-    </modules>
+            <module>combined</module>
+        </modules>
 </project>
